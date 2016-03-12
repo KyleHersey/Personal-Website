@@ -31,5 +31,10 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        public ActionResult Sorting()
+        {
+            return View();
+        }
     }
 }
