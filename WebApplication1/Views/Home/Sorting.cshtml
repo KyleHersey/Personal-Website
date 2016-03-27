@@ -1,11 +1,17 @@
 ﻿@{
     ViewBag.Title = "Sorting";
 }
-<h2>Bubble Sort Demo (more to come)</h2>
+<h2>Sorting Demos</h2>
 <button id="makeBoxButton" onclick="makeBox()">Make boxes</button>
-<button id="sortBoxButton" onclick="sortBoxes()">Sort boxes</button>
+<label for="numBoxes">Number of Boxes:</label>
+<input type="number" id="numBoxes" value="100"/>
+<br />
+<button id="bubbleSortButton" onclick="bubbleSortBoxes()">BubblesSort</button>
+<button id="insertionSortButton" onclick="insertionSortBoxes()">Insertion Sort</button>
+<button id="mergeSort" onclick="mergeSortBoxesHelper()">Merge Sort</button>
 <div class="row">
     <div id="sandbox" style="background-color: lightgray"></div>
 </div>
 
 <script src="~/Scripts/MyScripts/boxmaker.js"></script>
+<script src="~/Scripts/MyScripts/sort.js"></script>
